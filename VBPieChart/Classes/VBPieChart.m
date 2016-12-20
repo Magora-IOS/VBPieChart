@@ -182,6 +182,9 @@ static __inline__ CGFloat CGPointDistanceBetweenTwoPoints(CGPoint point1, CGPoin
     }
 }
 
+- (NSArray *)pieces {
+	return self.piecesArray;
+}
 
 - (void) insertChartValue:(NSDictionary*)chartValue atIndex:(NSInteger)index {
     if (![chartValue isKindOfClass:[NSDictionary class]]) {

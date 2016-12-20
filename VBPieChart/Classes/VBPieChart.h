@@ -58,6 +58,8 @@ typedef CGPoint (^VBLabelBlock)(CALayer*layer, NSInteger index);
  */
 @interface VBPieChart : UIView
 
+@property (nonatomic, strong, readonly) NSArray *pieces;
+
 /*!
  @abstract Option to specify position of labels on the chart.
  @note Default VBLabelsPositionNone
