@@ -258,8 +258,8 @@
         }
     }
     
-    [self _calculateAccentVector];
-    
+//    [self _calculateAccentVector];
+	
     if (_endAnimationBlock != nil && flag) {
         _endAnimationBlock();
         _endAnimationBlock = nil;
@@ -332,7 +332,7 @@
 - (CGMutablePathRef) generatePath {
     CGPoint center = CGPointMake(self.frame.size.width/2.0, self.frame.size.height/2);
     CGMutablePathRef path = CGPathCreateMutable();
-    CGPathAddRelativeArc(path, &_currentMatrix, center.x, center.y, _innerRadius, _startAngle, _angle);
+    CGPathAddRelativeArc(path, &_currentMatrix, center.x, center.y, _innerRadius * (1 + self.accentPrecent), _startAngle, _angle);
     CGPathAddRelativeArc(path, &_currentMatrix, center.x, center.y, _outerRadius, _startAngle+_angle , -_angle);
     CGPathCloseSubpath(path);
     return path;
@@ -404,15 +404,15 @@
     _accent = YES;
     
     self.accentValue = _innerRadius*_accentPrecent;
-    
-    CGPoint center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
-    
-    CGAffineTransform matrix = CGAffineTransformIdentity;
-    matrix = CGAffineTransformMakeTranslation(center.x, center.y);
-    matrix = CGAffineTransformTranslate(matrix, _accentVector.x*_accentValue, _accentVector.y*_accentValue);
-    matrix = CGAffineTransformTranslate(matrix,-center.x,-center.x);
-    _currentMatrix = matrix;
-    
+	
+//    CGPoint center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+//
+//    CGAffineTransform matrix = CGAffineTransformIdentity;
+//    matrix = CGAffineTransformMakeTranslation(center.x, center.y);
+//    matrix = CGAffineTransformTranslate(matrix, _accentVector.x*_accentValue, _accentVector.y*_accentValue);
+//    matrix = CGAffineTransformTranslate(matrix,-center.x,-center.x);
+//    _currentMatrix = matrix;
+	
     CGMutablePathRef path = [self generatePath];
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"path"];
