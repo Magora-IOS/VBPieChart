@@ -7,6 +7,8 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import "VBPiePieceData.h"
+
 
 /*!
  Structure that represent one piece of Pie Chart.
@@ -16,6 +18,8 @@
     double _innerRadius;
     double _outerRadius;
 }
+
+@property (nonatomic, strong, readonly) VBPiePieceData* data;
 
 /*!
  Radius of pie chart.
