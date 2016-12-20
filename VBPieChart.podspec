@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
                    DESC
 
-  s.homepage     = "https://github.com/sakrist/VBPieChart"
+  s.homepage     = "https://github.com/Magora-IOS/VBPieChart"
   s.screenshots  = "https://raw.githubusercontent.com/sakrist/VBPieChart/master/Screenshot.png"
 
 
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/sakrist/VBPieChart.git", :tag => "1.2.0" }
+  s.source       = { :git => "https://github.com/Magora-IOS/VBPieChart.git", :tag => "1.2.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   s.source_files  = "VBPieChart/Classes", "VBPieChart/Classes/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "VBPieChart/Classes/VBPieChart.h"
+  s.public_header_files = "VBPieChart/Classes/*.h"
 
   s.frameworks  = "UIKit", "QuartzCore"
   s.requires_arc = true

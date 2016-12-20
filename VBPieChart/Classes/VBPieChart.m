@@ -8,7 +8,7 @@
 
 #import "VBPieChart.h"
 #import "VBPiePiece.h"
-#import "VBPiePiece_private.h"
+#import "VBPiePieceData.h"
 
 static __inline__ CGFloat CGPointDistanceBetweenTwoPoints(CGPoint point1, CGPoint point2) {
     

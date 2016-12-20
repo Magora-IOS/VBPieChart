@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7362375A1E09097100DCE99A /* VBPieChart.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 736237591E09097100DCE99A /* VBPieChart.podspec */; };
+		7362375C1E090A1D00DCE99A /* VBPiePieceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7362375B1E090A1D00DCE99A /* VBPiePieceData.m */; };
 		D2271CC01C4D85CE00AF8B8B /* VBCSimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2271CBF1C4D85CE00AF8B8B /* VBCSimpleTests.m */; };
 		D2C0FB6818B01CBA00C51D08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0FB6718B01CBA00C51D08 /* Foundation.framework */; };
 		D2C0FB6A18B01CBA00C51D08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C0FB6918B01CBA00C51D08 /* CoreGraphics.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		736237591E09097100DCE99A /* VBPieChart.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VBPieChart.podspec; sourceTree = "<group>"; };
+		7362375B1E090A1D00DCE99A /* VBPiePieceData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VBPiePieceData.m; path = Classes/VBPiePieceData.m; sourceTree = "<group>"; };
 		D2271CB51C4D85A400AF8B8B /* VBPieChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VBPieChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2271CB91C4D85A400AF8B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2271CBF1C4D85CE00AF8B8B /* VBCSimpleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBCSimpleTests.m; sourceTree = "<group>"; };
@@ -61,7 +65,7 @@
 		D2C0FBAF18B02C0900C51D08 /* VBPiePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VBPiePiece.m; path = Classes/VBPiePiece.m; sourceTree = "<group>"; };
 		D2C0FBB118B02C2400C51D08 /* VBPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VBPieChart.h; path = Classes/VBPieChart.h; sourceTree = "<group>"; };
 		D2C0FBB218B02C2400C51D08 /* VBPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VBPieChart.m; path = Classes/VBPieChart.m; sourceTree = "<group>"; };
-		D2D6AD381C4BC97D00125D9E /* VBPiePiece_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VBPiePiece_private.h; path = Classes/VBPiePiece_private.h; sourceTree = "<group>"; };
+		D2D6AD381C4BC97D00125D9E /* VBPiePieceData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VBPiePieceData.h; path = Classes/VBPiePieceData.h; sourceTree = "<group>"; };
 		D2DBF2021C53BCAF006B868D /* pattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern.jpg; sourceTree = "<group>"; };
 		D2DBF2041C53BD1D006B868D /* pattern2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern2.png; sourceTree = "<group>"; };
 		D2DBF2061C540272006B868D /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexColor.h"; path = "Classes/UIColor+HexColor.h"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		D2C0FB5B18B01CBA00C51D08 = {
 			isa = PBXGroup;
 			children = (
+				736237591E09097100DCE99A /* VBPieChart.podspec */,
 				D2C0FB6D18B01CBA00C51D08 /* VBPieChart */,
 				D2271CB61C4D85A400AF8B8B /* VBPieChartTests */,
 				D2C0FB6618B01CBA00C51D08 /* Frameworks */,
@@ -143,7 +148,8 @@
 				D2C0FBB218B02C2400C51D08 /* VBPieChart.m */,
 				D2C0FBAE18B02C0900C51D08 /* VBPiePiece.h */,
 				D2C0FBAF18B02C0900C51D08 /* VBPiePiece.m */,
-				D2D6AD381C4BC97D00125D9E /* VBPiePiece_private.h */,
+				D2D6AD381C4BC97D00125D9E /* VBPiePieceData.h */,
+				7362375B1E090A1D00DCE99A /* VBPiePieceData.m */,
 				D2DBF2061C540272006B868D /* UIColor+HexColor.h */,
 				D2DBF2071C540272006B868D /* UIColor+HexColor.m */,
 				D2C0FB8218B01CBA00C51D08 /* Images.xcassets */,
@@ -254,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C0FB7E18B01CBA00C51D08 /* Main_iPad.storyboard in Resources */,
+				7362375A1E09097100DCE99A /* VBPieChart.podspec in Resources */,
 				D2C0FB8318B01CBA00C51D08 /* Images.xcassets in Resources */,
 				D2DBF2031C53BCAF006B868D /* pattern.jpg in Resources */,
 				D2C0FB7B18B01CBA00C51D08 /* Main_iPhone.storyboard in Resources */,
@@ -281,6 +288,7 @@
 				D2C0FB7418B01CBA00C51D08 /* main.m in Sources */,
 				D2C0FB8118B01CBA00C51D08 /* VBCViewController.m in Sources */,
 				D2C0FBB318B02C2400C51D08 /* VBPieChart.m in Sources */,
+				7362375C1E090A1D00DCE99A /* VBPiePieceData.m in Sources */,
 				D2C0FBB018B02C0900C51D08 /* VBPiePiece.m in Sources */,
 				D2DBF2081C540272006B868D /* UIColor+HexColor.m in Sources */,
 			);
