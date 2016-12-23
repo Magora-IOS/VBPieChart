@@ -429,7 +429,16 @@ static __inline__ CGFloat CGPointDistanceBetweenTwoPoints(CGPoint point1, CGPoin
     CGPoint point = [touch locationInView:self];
     if (CGPointDistanceBetweenTwoPoints(point, _touchBegan) < 5) {
         _hitLayer = (VBPiePiece*)[self layerForTouch:touch];
-        
+		
+		for (VBPiePiece *piece in self.pieces) {
+			if (piece == _hitLayer) {
+				continue;
+			}
+			if (piece.accent) {
+				[piece animateToAccent:0];
+			}
+		}
+		
         if (_hitLayer.accentPrecent < FLT_EPSILON) {
             [_hitLayer animateToAccent:_maxAccentPrecent];
 			[self.delegate pieChart:self selectedPiece:_hitLayer];
