@@ -40,9 +40,6 @@ static __inline__ CGFloat CGPointDistanceBetweenTwoPoints(CGPoint point1, CGPoin
 // setup piece Angle (then will be calcuated length) and Start Angle.
 - (void) pieceAngle:(double)angle start:(double)startAngle;
 
-// animate to accent position
-- (BOOL) animateToAccent:(double)accentPrecent;
-
 // animations methods
 - (void) _animateToAngle:(double)angle startAngle:(double)startAngle;
 - (void) _animate;

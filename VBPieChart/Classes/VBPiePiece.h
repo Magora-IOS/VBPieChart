@@ -65,4 +65,7 @@
  */
 - (CGMutablePathRef) generatePath;
 
+// animate to accent position
+- (BOOL) animateToAccent:(double)accentPrecent;
+
 @end
