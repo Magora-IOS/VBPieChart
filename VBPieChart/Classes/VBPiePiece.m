@@ -126,9 +126,9 @@
     
     if (_accent) {
         CGAffineTransform matrix = CGAffineTransformIdentity;
-        matrix = CGAffineTransformMakeTranslation(center.x, center.y);
-        matrix = CGAffineTransformTranslate(matrix, _accentVector.x*_accentValue, _accentVector.y*_accentValue);
-        matrix = CGAffineTransformTranslate(matrix,-center.x,-center.x);
+//        matrix = CGAffineTransformMakeTranslation(center.x, center.y);
+//        matrix = CGAffineTransformTranslate(matrix, _accentVector.x*_accentValue, _accentVector.y*_accentValue);
+//        matrix = CGAffineTransformTranslate(matrix,-center.x,-center.x);
         _currentMatrix = matrix;
         
 #if DEBUG
